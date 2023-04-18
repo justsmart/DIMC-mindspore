@@ -2,7 +2,7 @@
 
 Paper: "Deep Double Incomplete Multi-view Multi-label Learning with Incomplete Labels and Missing Views", accepted by TNNLS.
 
-This code is implemented by [mindspore 2.0.0](https://mindspore.cn/)
+This code is implemented by [mindspore 2.0.0](https://mindspore.cn/), and this is [pytorch code](https://github.com/justsmart/DIMC).
 
 
 corel5k dataset is provided for a demo!
