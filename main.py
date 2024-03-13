@@ -319,8 +319,8 @@ if __name__ == "__main__":
               
                             model, _,ap_loss = train_DIMC(mul_X, mul_X_val, WE, WE_val, yv_label, args)
                             print('train over')
-                            # yp_prob = test_DIMC(model, mul_X_rtest, WE_rtest, args)
-                            # print('test over')
+                            yp_prob = test_DIMC(model, mul_X_rtest, WE_rtest, args)
+                            print('test over')
                             
                             value_result = do_metric(yp_prob, yrt_label)
                             del mul_X,mul_X_val,WE,WE_val,yv_label
