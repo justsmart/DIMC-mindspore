@@ -1,0 +1,2 @@
+mean_AP std_AP mean_hamming_loss std_hamming_loss mean_one_error std_one_error mean_coverage std_coverage mean_ranking_loss std_ranking_loss mean_AUC std_AUC mean_AUCme std_AUCme mean_macro_f1 std_macro_f1 mean_micro_f1 std_micro_f1 lrkl momentumKL alphakl betakl gammakl
+0.3567903400536859 0.0 0.9871521002362122 0.0 0.5607476635514018 0.0 0.28862072506932324 0.0 0.8698455598629641 0.0 0.5973545131002346 0.0 0.8749028109311289 0.0 0.02822545797022746 0.0 0.14138641043239533 0.0 0.1 0.9 0.1 0 0

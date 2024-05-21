@@ -180,10 +180,10 @@ if __name__ == "__main__":
 
     parser.add_argument('--lr', type=float, default=0.01)
     parser.add_argument('--Nlabel', default=7, type=int)
-    parser.add_argument('--maxiter', default=300, type=int)
+    parser.add_argument('--maxiter', default=200, type=int)
     parser.add_argument('--batch_size', default=128, type=int)
-    parser.add_argument('--dataset', type=str, default='corel5k_six_view')
-    parser.add_argument('--dataPath', type=str, default='data/corel5k')
+    parser.add_argument('--dataset', type=str, default='pascal07_six_view')
+    parser.add_argument('--dataPath', type=str, default='/disk/MATLAB-NOUPLOAD/MyMVML-data/pascal07')
     # parser.add_argument('--pretrain_path_basis', type=str, default='pascal07/iaprtc_six_view')
     parser.add_argument('--MaskRatios', type=float, default=0.5)
     parser.add_argument('--LabelMaskRatio', type=float, default=0.5)
@@ -319,7 +319,7 @@ if __name__ == "__main__":
               
                             model, _,ap_loss = train_DIMC(mul_X, mul_X_val, WE, WE_val, yv_label, args)
                             print('train over')
-                            # yp_prob = test_DIMC(model, mul_X_rtest, WE_rtest, args)
+                            yp_prob = test_DIMC(model, mul_X_rtest, WE_rtest, args)
                             # print('test over')
                             
                             value_result = do_metric(yp_prob, yrt_label)
